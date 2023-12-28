@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 body {
   background-color: #070d2d;
+  font-family: "Quicksand", sans-serif;
 }
 
 .ListItems {
@@ -12,7 +14,6 @@ body {
   height: 70vh;
   justify-content: center;
   align-items: center;
-  background-color: #050505;
 }
 #menubtn {
   font-size: 40px;
@@ -27,6 +28,7 @@ body {
   font-size: 40px;
   text-align: left;
 
+  transition: all 300ms ease-in 0ms;
   color: white;
 }
 
@@ -37,5 +39,14 @@ body > div:first-child {
 }
 #ListItems > div > button:hover {
   box-sizing: border-box;
-  border-bottom: 2px solid white;
+  background-color: white;
+  color: black;
+}
+#menubtn {
+  transform: rotate(0deg);
+  transition: transform 300ms ease-in 250ms;
+}
+
+#menubtn:hover {
+  transform: rotate(360deg);
 }

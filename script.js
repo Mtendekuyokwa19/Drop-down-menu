@@ -1,5 +1,5 @@
-/* eslint-disable no-unused-vars */
 /* eslint no-console: "error" */
+// eslint-disable-next-line no-unused-vars
 const menuFunctionalities = (() => {
   const menuButton = document.querySelector('#menubtn')
   const menuList = document.querySelector('#ListItems')
@@ -29,8 +29,6 @@ const menuFunctionalities = (() => {
   }
 
   function changeToClosingicon () {
-    const hamburgerMenu = document.querySelector('#menubtn>svg')
-
     menuButton.textContent = 'X'
   }
   function changeToHamburgerIcon () {
